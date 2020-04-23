@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chân Tướng</title>
+</head>
+<body>
+
+Cảm ơn bạn đã tìm hiểu chân tướng!
+
+<script type="text/javascript">
+  let map = {
+    '/cuoc-buc-hai-phap-luan-cong':
+      'http://vn.minghui.org/news/category/vi-sao-buc-hai',
+    '/phap-luan-cong':
+      'https://vi.falundafa.org/introduction.html'
+  };
+
+  let uri = window.location.pathname;
+
+  if (!uri || !map.hasOwnProperty(uri)) {
+    uri = '/phap-luan-cong'
+  }
+
+  setTimeout(() => window.location.href = map[uri], 2000);
+</script>
+</body>
+</html>
