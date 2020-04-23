@@ -6,23 +6,21 @@
 </head>
 <body>
 
-Cảm ơn bạn đã tìm hiểu chân tướng!
-
 <script type="text/javascript">
   let map = {
-    '/cuoc-buc-hai-phap-luan-cong':
-      'http://vn.minghui.org/news/category/vi-sao-buc-hai',
-    '/phap-luan-cong':
-      'https://vi.falundafa.org/introduction.html'
+    // Personal share
+    '#e0a3': 'http://vn.minghui.org/news/category/vi-sao-buc-hai',
+    '#jnoa': 'https://vi.falundafa.org/introduction.html'
   };
 
-  let uri = window.location.pathname;
+  let uri = window.location.hash;
 
   if (!uri || !map.hasOwnProperty(uri)) {
-    uri = '/phap-luan-cong'
+    uri = '#jnoa'
   }
 
-  setTimeout(() => window.location.href = map[uri], 2000);
+  window.location.href = map[uri];
 </script>
+
 </body>
 </html>
